@@ -522,11 +522,11 @@ export default function AppointmentForm({ initialDoctorId = '', initialDepartmen
           </div>
 
           {/* Action buttons */}
-          <div className="flex items-center gap-4 pt-2">
+          <div className="flex flex-col-reverse sm:flex-row items-center gap-3 pt-2">
             <button
               type="button"
               onClick={() => setStep(1)}
-              className="w-1/3 h-12 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+              className="w-full sm:w-1/3 h-12 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
             >
               <span className="material-symbols-outlined text-[18px]">arrow_back</span>
               <span>Back</span>
@@ -534,7 +534,7 @@ export default function AppointmentForm({ initialDoctorId = '', initialDepartmen
             <button
               type="button"
               onClick={handleConfirm}
-              className="w-2/3 h-12 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md rounded-xl flex items-center justify-center gap-2 shadow-sm transition-all hover:shadow-md cursor-pointer font-semibold active:scale-[0.99]"
+              className="w-full sm:w-2/3 h-12 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md rounded-xl flex items-center justify-center gap-2 shadow-sm transition-all hover:shadow-md cursor-pointer font-semibold active:scale-[0.99]"
             >
               <span>Confirm Appointment</span>
               <span className="material-symbols-outlined text-[18px]">check_circle</span>
@@ -563,7 +563,7 @@ export default function AppointmentForm({ initialDoctorId = '', initialDepartmen
           </div>
 
           {/* Summary card */}
-          <div className="w-full max-w-lg bg-surface-container-low rounded-xl p-5 text-left flex flex-col gap-3 border border-surface-container">
+          <div className="w-full max-w-lg bg-surface-container-low rounded-xl p-4 sm:p-5 text-left flex flex-col gap-3 border border-surface-container">
             <div className="flex justify-between items-center pb-3 border-b border-surface-container">
               <span className="font-body-sm text-body-sm text-on-surface-variant">Booking Reference</span>
               <span className="font-label-md text-label-md text-primary font-bold">
@@ -571,7 +571,7 @@ export default function AppointmentForm({ initialDoctorId = '', initialDepartmen
               </span>
             </div>
 
-            <div className="grid grid-cols-2 gap-3 text-body-sm">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-body-sm">
               <div>
                 <span className="block text-on-surface-variant text-[11px] uppercase tracking-wider">
                   Patient Name
@@ -607,11 +607,11 @@ export default function AppointmentForm({ initialDoctorId = '', initialDepartmen
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 w-full max-w-md">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md">
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+              className="w-full sm:flex-1 h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
             >
               <span className="material-symbols-outlined text-[18px]">add</span>
               <span>Book Another</span>
@@ -619,7 +619,7 @@ export default function AppointmentForm({ initialDoctorId = '', initialDepartmen
             <button
               type="button"
               onClick={() => navigate('/')}
-              className="flex-1 h-11 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors font-semibold cursor-pointer"
+              className="w-full sm:flex-1 h-11 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors font-semibold cursor-pointer"
             >
               <span className="material-symbols-outlined text-[18px]">home</span>
               <span>Return Home</span>

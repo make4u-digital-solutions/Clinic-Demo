@@ -110,16 +110,16 @@ export default function Home() {
             </div>
 
             {/* Center Column: Doctor Visual Hero */}
-            <div className="lg:col-span-4 relative flex justify-center items-end min-h-[420px] lg:min-h-[500px]">
+            <div className="lg:col-span-4 relative flex justify-center items-end min-h-[360px] sm:min-h-[420px] lg:min-h-[500px]">
               <div className="absolute inset-0 bg-gradient-to-t from-secondary-container/30 to-primary-fixed/20 rounded-3xl -z-10 mx-auto w-11/12 max-w-sm h-full"></div>
               <img
-                className="w-full max-w-xs md:max-w-sm object-cover object-top h-[440px] drop-shadow-xl z-10"
+                className="w-full max-w-xs md:max-w-sm object-cover object-top h-[380px] sm:h-[440px] drop-shadow-xl z-10"
                 alt="CarePlus Specialist Doctor"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIdS_8zsCAD1BoCksokGHeirK1UuS-r0iWGSKtO7lG8_lfBho75KvZtI_HBbFbYss13Qhu72K-ltqWCykiWopqIma4rbh7zOZWb8jR8M8MoB3ihqZ-gIN4DZx_8lKaVyomiqBTdI-X92aLC73ptxRrqiU4xNhHzWnuooJVZyvPaqEwRZo2AShCnsOS-LDT0a5za6nQYCVisHtspGUc4Q0_fy8o54ojuXC-N9INADWXPoHquNQYiEhqzA"
               />
               {/* Floating badge overlay */}
-              <div className="absolute bottom-6 -left-2 sm:left-4 z-20 flex items-center gap-3 p-3 rounded-2xl bg-surface-container-lowest shadow-xl backdrop-blur-md border border-surface-container/60">
-                <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+              <div className="absolute bottom-4 left-2 sm:left-4 z-20 flex items-center gap-3 p-2.5 sm:p-3 rounded-2xl bg-surface-container-lowest shadow-xl backdrop-blur-md border border-surface-container/60 max-w-[95%]">
+                <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
                   <span className="material-symbols-outlined text-[22px]">diversity_1</span>
                 </div>
                 <div className="flex flex-col">
@@ -312,8 +312,8 @@ export default function Home() {
               </div>
 
               {/* Decorative accent block */}
-              <div className="absolute -bottom-4 -right-4 p-4 rounded-2xl bg-surface-container-lowest shadow-xl flex items-center gap-3 border border-surface-container">
-                <div className="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+              <div className="absolute -bottom-3 right-2 sm:-bottom-4 sm:-right-4 p-3 sm:p-4 rounded-2xl bg-surface-container-lowest shadow-xl flex items-center gap-3 border border-surface-container max-w-[90%]">
+                <div className="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
                   <span className="material-symbols-outlined text-[22px]">verified</span>
                 </div>
                 <div>
@@ -484,9 +484,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center gap-4 shrink-0 flex-wrap sm:flex-nowrap">
+          <div className="flex items-center gap-3 shrink-0 w-full sm:w-auto flex-col sm:flex-row">
             <a
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-md font-semibold"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-md font-semibold text-center"
               href="tel:+919876500108"
             >
               <span className="material-symbols-outlined text-[20px] text-error">call</span>
@@ -494,7 +494,7 @@ export default function Home() {
             </a>
             <Link
               to="/appointment"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-colors shadow-md font-semibold"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-colors shadow-md font-semibold text-center"
             >
               <span>Book Online</span>
             </Link>

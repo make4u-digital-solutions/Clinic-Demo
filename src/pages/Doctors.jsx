@@ -200,20 +200,64 @@ export default function Doctors() {
           <button
             type="button"
             onClick={handleReset}
-            className="h-11 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shrink-0 cursor-pointer"
+            className="w-full sm:w-auto h-11 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shrink-0 cursor-pointer"
             title="Reset all filters"
           >
             <span className="material-symbols-outlined text-[18px]">restart_alt</span>
-            <span className="hidden sm:inline">Reset</span>
+            <span>Reset Filters</span>
           </button>
         </div>
       </section>
 
       {/* 3. Main Doctors Directory Grid & Sidebar */}
       <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+        {/* Mobile-only horizontal scrollable specialty chips */}
+        <div className="lg:hidden mb-6">
+          <div className="flex items-center justify-between mb-2">
+            <span className="font-label-sm text-label-sm text-on-surface-variant font-semibold">
+              Filter by Specialty
+            </span>
+            <span className="text-badge font-badge text-secondary">
+              Swipe to explore →
+            </span>
+          </div>
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none -mx-4 px-4">
+            <button
+              type="button"
+              onClick={() => handleSpecialtyChange('all')}
+              className={`shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-sm text-label-sm transition-all cursor-pointer ${
+                selectedSpecialty === 'all'
+                  ? 'bg-secondary text-on-secondary font-bold shadow-sm'
+                  : 'bg-surface-container-lowest text-on-surface border border-surface-container'
+              }`}
+            >
+              <span>All Specialties</span>
+              <span className="text-[11px] opacity-80">(8)</span>
+            </button>
+            {departments.map((dept) => {
+              const isActive = selectedSpecialty.toLowerCase() === dept.id.toLowerCase();
+              return (
+                <button
+                  key={dept.id}
+                  type="button"
+                  onClick={() => handleSpecialtyChange(dept.id)}
+                  className={`shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-sm text-label-sm transition-all cursor-pointer ${
+                    isActive
+                      ? 'bg-secondary text-on-secondary font-bold shadow-sm'
+                      : 'bg-surface-container-lowest text-on-surface border border-surface-container'
+                  }`}
+                >
+                  <span className="material-symbols-outlined text-[16px]">{dept.icon}</span>
+                  <span>{dept.name}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left Sidebar: Specialty Categories */}
-          <aside className="lg:col-span-3 w-full bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-1.5 sticky top-28 border border-surface-container/40">
+          {/* Desktop Left Sidebar: Specialty Categories */}
+          <aside className="hidden lg:flex lg:col-span-3 w-full bg-surface-container-lowest rounded-xl p-4 shadow-sm flex-col gap-1.5 sticky top-28 border border-surface-container/40">
             <div className="flex items-center justify-between pb-3 mb-1 px-2 border-b border-surface-container">
               <span className="font-headline-sm text-headline-sm text-primary font-bold">Specialties</span>
               <span className="text-badge font-badge bg-surface-container-high text-primary px-2 py-0.5 rounded-full font-bold">

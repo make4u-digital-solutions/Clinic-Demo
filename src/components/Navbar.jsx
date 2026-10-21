@@ -102,22 +102,23 @@ export default function Navbar() {
 
           <Link
             to="/appointment"
-            className="inline-flex items-center justify-center px-4 sm:px-5 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all duration-200 shadow-sm active:scale-95"
+            className="inline-flex items-center justify-center px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-xs sm:text-label-md hover:bg-primary transition-all duration-200 shadow-sm active:scale-95 shrink-0 whitespace-nowrap"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Book Appointment
+            <span className="hidden xs:inline sm:inline">Book Appointment</span>
+            <span className="inline xs:hidden sm:hidden">Book Now</span>
           </Link>
 
           <img
             alt="Doctor profile thumbnail"
-            className="w-8 h-8 rounded-full object-cover hidden sm:block border border-surface-container"
+            className="w-8 h-8 rounded-full object-cover hidden md:block border border-surface-container"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX5OOgXV-ItpxA9dzoCmvkwt7hjUV7rLYjgwAx13J4KiLJkQu6sdORzBd4ABR8xskaL56uCPuSoAbGEzZLuu6mskuXEAS8Dveyi4dSnoRFFYt87SHufexyLfO3R50v-KgWbJg0O-6Q5xdwsTU2oHmoOfV9i4_kcFQbgGVzYY9-6mLFtBP3JIGkChqh7etvwxex2Ygv-8c-GCmjgWKvVMs8iVPq8JNQdwUatwPBsthdlXEqc26-rUnaJg"
           />
 
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="lg:hidden p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"
+            className="lg:hidden p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors shrink-0"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -128,7 +129,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-surface-container-lowest border-b border-surface-container shadow-xl animate-fade-in">
+        <div className="lg:hidden bg-surface-container-lowest border-b border-surface-container shadow-xl animate-fade-in max-h-[calc(100vh-80px)] overflow-y-auto">
           <div className="px-4 pt-3 pb-6 flex flex-col gap-1 max-w-7xl mx-auto">
             <NavLink
               to="/"

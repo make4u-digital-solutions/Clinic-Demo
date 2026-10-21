@@ -82,16 +82,16 @@ export default function About() {
                   alt="CarePlus Clinic Reception & Waiting Lounge"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZWoXKeqCzd-9nP9n958t_kCQpJVqC4_oCpUI0d6arN-WTNoaT1DqlNuR5JxlR25HKEzl4ClhYAdEiqwz4IVhaYVw4em4L3q3TpU2Pcx1SBl9UNGQ1rvysWaNg6Gat8Te7vDz2ryH0cr8kb_V8_oQkEE__oXoVoVTj7WLMUinJcUJiFWATECRN2rKcCRx_gsZA93SmMtVx1SnWBqz1Ng1aVJTkfcr4IumWc03pI3ZOrJ66cF7n0ULu8w"
                 />
-                <div className="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md p-4 rounded-xl shadow-sm flex items-center justify-between border border-surface-container">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
-                      <span className="material-symbols-outlined text-[22px]">medical_services</span>
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-surface-container-lowest/95 backdrop-blur-md p-3 sm:p-4 rounded-xl shadow-sm flex items-center justify-between border border-surface-container">
+                  <div className="flex items-center gap-2.5 sm:gap-3">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+                      <span className="material-symbols-outlined text-[20px] sm:text-[22px]">medical_services</span>
                     </div>
                     <div>
-                      <p className="font-label-md text-label-md text-primary font-bold">
+                      <p className="font-label-md text-label-sm sm:text-label-md text-primary font-bold">
                         NABH Accredited Standard
                       </p>
-                      <p className="font-body-sm text-body-sm text-on-surface-variant">
+                      <p className="font-body-sm text-[12px] sm:text-body-sm text-on-surface-variant">
                         Rigorous safety &amp; sanitation protocol
                       </p>
                     </div>
@@ -304,17 +304,17 @@ export default function About() {
               </div>
 
               {/* Quick Action Bar */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row items-center gap-4 pt-2 w-full">
                 <Link
                   to="/appointment"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm font-semibold active:scale-95"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm font-semibold active:scale-95 w-full sm:w-auto"
                 >
                   <span className="material-symbols-outlined text-[18px]">calendar_month</span>
                   <span>Book Consultation</span>
                 </Link>
                 <Link
                   to="/doctors"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md hover:bg-surface-container-highest transition-colors font-semibold active:scale-95"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md hover:bg-surface-container-highest transition-colors font-semibold active:scale-95 w-full sm:w-auto"
                 >
                   <span className="material-symbols-outlined text-[18px]">groups</span>
                   <span>Meet Our Doctors</span>

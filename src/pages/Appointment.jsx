@@ -16,8 +16,8 @@ export default function Appointment() {
         subtitle="Schedule your visit with our expert doctors. Quality care designed around your comfort and health."
         breadcrumb={[{ label: 'Appointment' }]}
         rightContent={
-          <div className="flex flex-wrap sm:flex-nowrap items-center gap-4">
-            <div className="flex items-center gap-3 bg-primary/40 backdrop-blur-md px-4 py-3 rounded-xl border border-surface-container-highest/10 shadow-sm">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
+            <div className="flex items-center gap-3 bg-primary/40 backdrop-blur-md px-4 py-3 rounded-xl border border-surface-container-highest/10 shadow-sm flex-1 sm:flex-initial">
               <div className="w-10 h-10 rounded-lg bg-secondary-fixed/20 text-secondary-fixed flex items-center justify-center shrink-0">
                 <span className="material-symbols-outlined text-[22px]">calendar_today</span>
               </div>
@@ -31,7 +31,7 @@ export default function Appointment() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3 bg-primary/40 backdrop-blur-md px-4 py-3 rounded-xl border border-surface-container-highest/10 shadow-sm">
+            <div className="flex items-center gap-3 bg-primary/40 backdrop-blur-md px-4 py-3 rounded-xl border border-surface-container-highest/10 shadow-sm flex-1 sm:flex-initial">
               <div className="w-10 h-10 rounded-lg bg-secondary-fixed/20 text-secondary-fixed flex items-center justify-center shrink-0">
                 <span className="material-symbols-outlined text-[22px]">schedule</span>
               </div>

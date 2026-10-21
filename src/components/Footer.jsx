@@ -204,9 +204,9 @@ export default function Footer() {
         </div>
 
         {/* Sub-footer */}
-        <div className="pt-space-md border-t border-surface-container flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+        <div className="pt-space-md border-t border-surface-container flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left">
           <p>© 2024 CarePlus Multi-Speciality Clinic. All rights reserved.</p>
-          <div className="flex items-center gap-space-lg">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <span className="hover:text-secondary cursor-pointer">Privacy Policy</span>
             <span className="hover:text-secondary cursor-pointer">Terms of Service</span>
             <span className="hover:text-secondary cursor-pointer">Patient Rights</span>

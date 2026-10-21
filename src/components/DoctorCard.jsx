@@ -76,7 +76,7 @@ export default function DoctorCard({ doctor, variant = 'circular' }) {
             onClick={() => setShowModal(false)}
           >
             <div
-              className="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-6 shadow-2xl relative border border-surface-container"
+              className="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-5 sm:p-6 shadow-2xl relative border border-surface-container max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -86,11 +86,11 @@ export default function DoctorCard({ doctor, variant = 'circular' }) {
               >
                 <span className="material-symbols-outlined text-[18px]">close</span>
               </button>
-              <div className="flex items-center gap-4 pb-4 border-b border-surface-container">
+              <div className="flex items-center gap-3.5 sm:gap-4 pb-4 border-b border-surface-container">
                 <img
                   src={doctor.image}
                   alt={doctor.name}
-                  className="w-20 h-20 rounded-full object-cover border-2 border-secondary"
+                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shrink-0 border-2 border-secondary"
                 />
                 <div>
                   <h3 className="font-headline-sm text-primary">{doctor.name}</h3>
@@ -198,7 +198,7 @@ export default function DoctorCard({ doctor, variant = 'circular' }) {
           onClick={() => setShowModal(false)}
         >
           <div
-            className="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-6 shadow-2xl relative border border-surface-container"
+            className="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-5 sm:p-6 shadow-2xl relative border border-surface-container max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -208,11 +208,11 @@ export default function DoctorCard({ doctor, variant = 'circular' }) {
             >
               <span className="material-symbols-outlined text-[18px]">close</span>
             </button>
-            <div className="flex items-center gap-4 pb-4 border-b border-surface-container">
+            <div className="flex items-center gap-3.5 sm:gap-4 pb-4 border-b border-surface-container">
               <img
                 src={doctor.image}
                 alt={doctor.name}
-                className="w-20 h-20 rounded-full object-cover border-2 border-secondary"
+                className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shrink-0 border-2 border-secondary"
               />
               <div>
                 <h3 className="font-headline-sm text-primary">{doctor.name}</h3>

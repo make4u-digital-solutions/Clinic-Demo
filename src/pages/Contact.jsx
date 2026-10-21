@@ -133,8 +133,8 @@ export default function Contact() {
 
           {/* Right Modern Clinic Graphic with CarePlus signage */}
           <div className="w-full md:w-auto flex items-center justify-center shrink-0">
-            <div className="relative group rounded-2xl overflow-hidden shadow-2xl bg-surface-container-lowest/10 p-2 backdrop-blur-md border border-white/10">
-              <div className="w-72 sm:w-80 h-44 sm:h-48 rounded-xl overflow-hidden relative">
+            <div className="relative group rounded-2xl overflow-hidden shadow-2xl bg-surface-container-lowest/10 p-2 backdrop-blur-md border border-white/10 w-full max-w-xs sm:max-w-none">
+              <div className="w-full sm:w-80 h-44 sm:h-48 rounded-xl overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                   alt="Modern clinic entrance with CarePlus signage"
@@ -556,16 +556,16 @@ export default function Contact() {
                     type="button"
                     onClick={() => toggleFaq(faq.id)}
                     aria-expanded={isOpen}
-                    className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none cursor-pointer"
+                    className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left focus:outline-none cursor-pointer gap-2"
                   >
-                    <span className="font-headline-sm text-headline-sm text-primary flex items-center gap-3 font-semibold">
-                      <span className="material-symbols-outlined text-secondary text-[22px]">
+                    <span className="font-headline-sm text-sm sm:text-headline-sm text-primary flex items-center gap-2.5 sm:gap-3 font-semibold">
+                      <span className="material-symbols-outlined text-secondary text-[20px] sm:text-[22px] shrink-0">
                         {faq.icon}
                       </span>
-                      {faq.question}
+                      <span>{faq.question}</span>
                     </span>
                     <span
-                      className={`material-symbols-outlined text-outline transition-transform duration-300 ${
+                      className={`material-symbols-outlined text-outline transition-transform duration-300 shrink-0 ${
                         isOpen ? 'rotate-180 text-secondary' : ''
                       }`}
                     >
@@ -574,8 +574,8 @@ export default function Contact() {
                   </button>
 
                   {isOpen && (
-                    <div className="px-6 pb-5 pt-1 animate-fade-in">
-                      <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    <div className="px-4 sm:px-6 pb-5 pt-1 animate-fade-in">
+                      <p className="font-body-md text-body-sm sm:text-body-md text-on-surface-variant leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>
@@ -586,8 +586,8 @@ export default function Contact() {
           </div>
 
           {/* Quick Assistance Callout Bar */}
-          <div className="mt-10 p-6 rounded-2xl bg-surface-container-highest/60 flex flex-col sm:flex-row items-center justify-between gap-4 border border-surface-container">
-            <div className="flex items-center gap-4">
+          <div className="mt-10 p-5 sm:p-6 rounded-2xl bg-surface-container-highest/60 flex flex-col sm:flex-row items-center justify-between gap-4 border border-surface-container">
+            <div className="flex items-center gap-3.5 sm:gap-4 w-full sm:w-auto">
               <div className="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
                 <span className="material-symbols-outlined text-[24px]">chat</span>
               </div>
@@ -601,7 +601,7 @@ export default function Contact() {
               </div>
             </div>
             <a
-              className="px-5 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary/90 transition-all flex items-center gap-2 shrink-0 shadow-sm font-semibold"
+              className="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary/90 transition-all flex items-center justify-center gap-2 shrink-0 shadow-sm font-semibold text-center"
               href="https://wa.me/919876543210"
               rel="noopener noreferrer"
               target="_blank"
