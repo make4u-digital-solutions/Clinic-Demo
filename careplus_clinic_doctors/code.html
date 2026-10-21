@@ -1,0 +1,710 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline-variant": "#c2c6d1",
+          "surface": "#faf9ff",
+          "outline": "#737781",
+          "on-background": "#051a3e",
+          "tertiary": "#2a3134",
+          "error": "#ba1a1a",
+          "on-tertiary-fixed": "#161c1f",
+          "on-secondary": "#ffffff",
+          "primary-fixed": "#d4e3ff",
+          "surface-container-high": "#e1e8ff",
+          "inverse-on-surface": "#edf0ff",
+          "on-secondary-fixed": "#001f23",
+          "surface-tint": "#2f6099",
+          "on-secondary-container": "#006d76",
+          "error-container": "#ffdad6",
+          "surface-container-low": "#f1f3ff",
+          "on-error-container": "#93000a",
+          "on-surface-variant": "#424750",
+          "on-tertiary-fixed-variant": "#41484b",
+          "tertiary-container": "#41474a",
+          "surface-bright": "#faf9ff",
+          "primary-container": "#0b477f",
+          "inverse-primary": "#a4c9ff",
+          "on-primary-fixed": "#001c39",
+          "on-primary-container": "#89b6f5",
+          "surface-container-highest": "#d9e2ff",
+          "background": "#faf9ff",
+          "primary-fixed-dim": "#a4c9ff",
+          "on-secondary-fixed-variant": "#004f56",
+          "tertiary-fixed-dim": "#c1c7cb",
+          "inverse-surface": "#1e3054",
+          "on-error": "#ffffff",
+          "secondary": "#006971",
+          "surface-dim": "#ccdaff",
+          "on-primary-fixed-variant": "#0d4880",
+          "secondary-fixed": "#88f3ff",
+          "on-surface": "#051a3e",
+          "surface-container-lowest": "#ffffff",
+          "primary": "#00305c",
+          "on-tertiary": "#ffffff",
+          "secondary-container": "#81f0fd",
+          "on-tertiary-container": "#afb5b9",
+          "surface-variant": "#d9e2ff",
+          "tertiary-fixed": "#dde3e7",
+          "surface-container": "#e9edff",
+          "secondary-fixed-dim": "#65d7e3",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "gutter-sm": "1rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-xl": "2.5rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "label-sm": ["Inter"],
+          "body-lg": ["Inter"],
+          "body-sm": ["Inter"],
+          "badge": ["Inter"],
+          "body-md": ["Inter"],
+          "label-md": ["Inter"],
+          "display-hero-mobile": ["Inter"],
+          "display-hero": ["Inter"],
+          "headline-md": ["Inter"],
+          "headline-lg": ["Inter"],
+          "headline-sm": ["Inter"],
+          "headline-lg-mobile": ["Inter"]
+        },
+        "fontSize": {
+          "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+          "body-lg": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+          "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "badge": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "700"}],
+          "body-md": ["14px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "display-hero-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+          "display-hero": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+          "headline-md": ["22px", {"lineHeight": "30px", "fontWeight": "700"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-sm": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-3 shrink-0"><img alt="CarePlus Clinic Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UhlpEKt_Gf-PhdT_siXfRECMT8O9X6O_L9_2OAs1g8Eb-lsT04YJ9BhhXvhcbjLyrr_lJun-pjl3GWO8hfZmPQlc3OO3Lr9a9n0Tq6ZI0b56WQV6490UTfqcKpHs-8wb_2VWEwRJcOwDJ3nWh_MXeTY2hUAMaJmGI_J3Cp4izNbEU4eh7n-23YUhw_CYqHO38p0syfVZ9YVkUFVusyu2mEaxyNzbY0p10WrNlcy156JcqXfJxLKAVA-AsZ"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">CarePlus</span><span class="font-badge text-badge text-secondary tracking-wider uppercase mt-0.5">MULTI-SPECIALITY CLINIC</span></div></div><nav class="hidden lg:flex items-center gap-space-lg h-full" data-active-classes="text-secondary border-b-2 border-secondary font-label-md"><a class="h-full flex items-center border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="home" href="#">Home</a><a class="h-full flex items-center border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="about" href="#">About</a><a class="h-full flex items-center border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="departments" href="#">Departments</a><a aria-current="page" class="h-full flex items-center transition-colors text-primary font-semibold border-b-2 border-secondary font-label-md" data-path="doctors" href="#">Doctors</a><a class="h-full flex items-center border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="appointment" href="#">Appointment</a><a class="h-full flex items-center border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-3 pr-2"><div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary"><span class="material-symbols-outlined text-[20px]">call</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">+91 98765 43210</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Mon - Sat: 9AM - 8PM</span></div></div><a class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" data-path="appointment" href="#">Book Appointment</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover hidden sm:block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX5OOgXV-ItpxA9dzoCmvkwt7hjUV7rLYjgwAx13J4KiLJkQu6sdORzBd4ABR8xskaL56uCPuSoAbGEzZLuu6mskuXEAS8Dveyi4dSnoRFFYt87SHufexyLfO3R50v-KgWbJg0O-6Q5xdwsTU2oHmoOfV9i4_kcFQbgGVzYY9-6mLFtBP3JIGkChqh7etvwxex2Ygv-8c-GCmjgWKvVMs8iVPq8JNQdwUatwPBsthdlXEqc26-rUnaJg"></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- 1. Page Header Hero Banner -->
+<section class="relative w-full bg-primary overflow-hidden py-10 lg:py-12">
+<!-- Subtle Ambient Vector Waves / Grid Glow -->
+<div class="absolute inset-0 pointer-events-none opacity-20">
+<svg class="w-full h-full object-cover" fill="none" preserveAspectRatio="none" viewBox="0 0 1440 320">
+<path d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,197.3C672,224,768,224,864,202.7C960,181,1056,139,1152,128C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="url(#hero-gradient)"></path>
+<defs>
+<linearGradient id="hero-gradient" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#88f3ff" stop-opacity="0.4"></stop>
+<stop offset="100%" stop-color="#006971" stop-opacity="0.05"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12">
+<!-- Left Content -->
+<div class="flex flex-col items-start max-w-xl text-left">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 mb-3 text-secondary-fixed text-label-sm font-label-sm">
+<a class="hover:underline flex items-center gap-1 opacity-90 transition-opacity" href="#">
+<span class="material-symbols-outlined text-[15px]">home</span>
+            Home
+          </a>
+<span class="opacity-60 text-[10px]">/</span>
+<span class="text-on-primary font-semibold">Doctors</span>
+</nav>
+<h1 class="text-display-hero-mobile lg:text-display-hero font-display-hero text-on-primary tracking-tight leading-tight">
+          Our Doctors
+        </h1>
+<p class="mt-2 text-body-lg font-body-lg text-primary-fixed opacity-95">
+          Meet our experienced and dedicated team of medical specialists committed to compassionate care and clinical excellence.
+        </p>
+<!-- Quick Stats Strip -->
+<div class="mt-6 flex flex-wrap items-center gap-6 pt-4 border-t-0 text-on-primary">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/20 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-primary leading-none">100% Board Certified</span>
+<span class="font-body-sm text-body-sm text-primary-fixed opacity-80">Specialist Physicians</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/20 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-primary leading-none">Same-Day Slots</span>
+<span class="font-body-sm text-body-sm text-primary-fixed opacity-80">Available Daily</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Graphic / Medical Team Illustration -->
+<div class="relative w-full max-w-lg lg:max-w-md shrink-0 flex justify-end">
+<div class="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-xl bg-surface-container-high/20 backdrop-blur-sm">
+<img class="w-full h-full object-cover object-center" data-alt="A distinguished, diverse group of smiling healthcare specialists, doctors and surgeons in crisp white medical coats with stethoscopes, standing harmoniously in an ultra-modern clean clinic setting with ice-blue and white soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQEHDYFdvEP9YVOU77OPXX0NOKRFv1uzEGSQldCrP8--Epni4XTsfoJMpZz-Y60UffPY-AuorV_t2zdYp_wrGFW3Ggsz6QWFzQVv5A2bywAHcVdYw-5EfcnBEXKcEIlNNfKh2HCIfJnTCa7SBeoClC6doLkqobZ-hg64V6RCpgjn0ZDOrBpa024We7YVDMDPVTGrMSMsTIbYNbm0520hPXOVD7qvPMopb5ExXzxsnDyKh28-XTxf0PpA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-on-primary">
+<span class="font-label-sm text-label-sm tracking-wide bg-primary-container/80 px-2.5 py-1 rounded-full backdrop-blur-md">
+              45+ Active Specialists On Duty
+            </span>
+<div class="flex items-center gap-1 text-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+              NABH Accredited
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Search & Filter Bar Section -->
+<section class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-20">
+<div class="w-full bg-surface-container-lowest rounded-xl p-4 lg:p-5 shadow-md flex flex-col md:flex-row items-center gap-3">
+<!-- Search Box -->
+<div class="relative flex-1 w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">
+          search
+        </span>
+<input class="w-full h-11 pl-11 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline text-body-md font-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" id="doctor-search" placeholder="Search doctors by name or specialty..." type="text">
+</div>
+<!-- Dropdown: Select Department -->
+<div class="relative w-full md:w-64">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">
+          medical_services
+        </span>
+<select class="w-full h-11 pl-11 pr-8 rounded-lg bg-surface-container-low text-on-surface text-body-md font-body-md appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="department-select">
+<option value="all">Select Department</option>
+<option value="general">General Medicine</option>
+<option value="pediatrics">Pediatrics</option>
+<option value="gynecology">Gynecology</option>
+<option value="dermatology">Dermatology</option>
+<option value="orthopedics">Orthopedics</option>
+<option value="cardiology">Cardiology</option>
+<option value="ent">ENT Specialist</option>
+<option value="dental">Dental Care</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">
+          expand_more
+        </span>
+</div>
+<!-- Dropdown: Sort By -->
+<div class="relative w-full md:w-52">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">
+          sort
+        </span>
+<select class="w-full h-11 pl-11 pr-8 rounded-lg bg-surface-container-low text-on-surface text-body-md font-body-md appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="sort-select">
+<option value="recommended">Sort By: Recommended</option>
+<option value="rating">Highest Rated</option>
+<option value="experience">Experience (High to Low)</option>
+<option value="availability">Next Available</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">
+          expand_more
+        </span>
+</div>
+<!-- Reset / Filter Button -->
+<button class="h-11 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shrink-0" id="clear-filters-btn" title="Reset all filters">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span class="hidden sm:inline">Reset</span>
+</button>
+</div>
+</section>
+<!-- 3. Main Doctors Directory Grid & Sidebar -->
+<main class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Sidebar: Specialty Categories -->
+<aside class="lg:col-span-3 w-full bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-1.5 sticky top-28">
+<div class="flex items-center justify-between pb-3 mb-1 px-2 border-b-0">
+<span class="font-headline-sm text-headline-sm text-primary">Specialties</span>
+<span class="text-badge font-badge bg-surface-container-high text-primary px-2 py-0.5 rounded-full">
+            8 Departments
+          </span>
+</div>
+<nav class="flex flex-col gap-1" id="specialty-sidebar">
+<button class="specialty-tab active flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md transition-all text-left" data-specialty="all">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px]">category</span>
+              All Specialties
+            </span>
+<span class="text-badge font-badge bg-on-secondary/20 px-2 py-0.5 rounded-full text-on-secondary">8</span>
+</button>
+<button class="specialty-tab flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-secondary font-label-md text-label-md transition-all text-left" data-specialty="general">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">stethoscope</span>
+              General Medicine
+            </span>
+<span class="text-badge font-badge bg-surface-container text-outline px-2 py-0.5 rounded-full">1</span>
+</button>
+<button class="specialty-tab flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-secondary font-label-md text-label-md transition-all text-left" data-specialty="pediatrics">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">child_care</span>
+              Pediatrics
+            </span>
+<span class="text-badge font-badge bg-surface-container text-outline px-2 py-0.5 rounded-full">1</span>
+</button>
+<button class="specialty-tab flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-secondary font-label-md text-label-md transition-all text-left" data-specialty="gynecology">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">female</span>
+              Gynecology
+            </span>
+<span class="text-badge font-badge bg-surface-container text-outline px-2 py-0.5 rounded-full">1</span>
+</button>
+<button class="specialty-tab flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-secondary font-label-md text-label-md transition-all text-left" data-specialty="dermatology">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">dermatology</span>
+              Dermatology
+            </span>
+<span class="text-badge font-badge bg-surface-container text-outline px-2 py-0.5 rounded-full">1</span>
+</button>
+<button class="specialty-tab flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-secondary font-label-md text-label-md transition-all text-left" data-specialty="orthopedics">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">orthopedics</span>
+              Orthopedics
+            </span>
+<span class="text-badge font-badge bg-surface-container text-outline px-2 py-0.5 rounded-full">1</span>
+</button>
+<button class="specialty-tab flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-secondary font-label-md text-label-md transition-all text-left" data-specialty="cardiology">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">cardiology</span>
+              Cardiology
+            </span>
+<span class="text-badge font-badge bg-surface-container text-outline px-2 py-0.5 rounded-full">1</span>
+</button>
+<button class="specialty-tab flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-secondary font-label-md text-label-md transition-all text-left" data-specialty="ent">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">hearing</span>
+              ENT Specialist
+            </span>
+<span class="text-badge font-badge bg-surface-container text-outline px-2 py-0.5 rounded-full">1</span>
+</button>
+<button class="specialty-tab flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-secondary font-label-md text-label-md transition-all text-left" data-specialty="dental">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">dentistry</span>
+              Dental Care
+            </span>
+<span class="text-badge font-badge bg-surface-container text-outline px-2 py-0.5 rounded-full">1</span>
+</button>
+</nav>
+<!-- Help & Helpline Banner Box -->
+<div class="mt-4 p-3.5 rounded-lg bg-surface-container-high flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">contact_support</span>
+            Need assistance choosing?
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Our patient care coordinators are ready to match your symptoms with the right specialist.
+          </p>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary hover:underline mt-1 font-semibold" href="tel:+919876543210">
+            Call +91 98765 43210 →
+          </a>
+</div>
+</aside>
+<!-- Right Directory Grid Area -->
+<div class="lg:col-span-9 flex flex-col gap-6">
+<!-- Results count & fast filter chips -->
+<div class="flex items-center justify-between flex-wrap gap-2">
+<span class="font-label-md text-label-md text-on-surface">
+            Showing <strong class="text-secondary" id="doctor-count">8</strong> Verified Specialists
+          </span>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+            All doctors accepting online consultations
+          </div>
+</div>
+<!-- The 8 Doctor Profile Cards Grid (2x4 layout) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5" id="doctors-grid">
+<!-- Card 1: Dr. Rajesh Kumar -->
+<article class="doctor-card bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center group" data-department="general" data-name="Dr. Rajesh Kumar">
+<div class="relative w-32 h-32 mb-3.5 rounded-full overflow-hidden bg-surface-container-high/60 p-1">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300" data-alt="Close-up professional headshot portrait of Dr. Rajesh Kumar, a middle-aged male Indian physician wearing gold-rimmed glasses and medical doctor coat, friendly smile, clean light blue clinic background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClliUA9vnXOKuUzxTDy9WhhEmmIefMnnjb0ivc_4-gSsfzxcpBjGl6b-U_77jv9a5hUEW_vXBifxCl7S7KdWGeaJaauykB4LMa8v-xtQa2_fFpi40eeENppVpsTY-QXV3jXUe4AaVszyUeQYaq5sv1aVrOTmXM3ylpHi1akLQqyQWi00dRwvXVhWuD8F2Vn5yn-HU6661IZE7TwKotZonJwkj4JM_8jbR8a-bLzXDap1qgl6cF5Zj1zQ">
+<span class="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white" title="Available Today"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight leading-snug">
+              Dr. Rajesh Kumar
+            </h3>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">
+              MBBS, MD
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">
+              General Physician
+            </span>
+<div class="flex items-center gap-1.5 mt-2.5 px-2.5 py-1 rounded-full bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
+<span class="font-body-sm text-body-sm text-outline">(250+ reviews)</span>
+</div>
+<div class="w-full mt-4 pt-3 flex flex-col gap-2">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-primary font-label-md text-label-md transition-colors text-center" href="#">
+                View Profile
+              </a>
+<a class="w-full py-2 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors text-center flex items-center justify-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">event</span>
+                Book Visit
+              </a>
+</div>
+</article>
+<!-- Card 2: Dr. Priya Sharma -->
+<article class="doctor-card bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center group" data-department="pediatrics" data-name="Dr. Priya Sharma">
+<div class="relative w-32 h-32 mb-3.5 rounded-full overflow-hidden bg-surface-container-high/60 p-1">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300" data-alt="Professional headshot of Dr. Priya Sharma, an empathetic female pediatrician in clean clinical attire with a stethoscope, warm friendly smile, soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgZF6jTnm3xrKXGRSBlrnINIldbxzDuIJgVUlpLAmzINUJWyM2GCMBskdLD-_6wjuj-i0o4LP8-DqBnYONGjc2UOZp_usN0ekf1aj2gPwMNS-pkNaOq9EA1NCd4357IbXUVcAHQ5ObWK5vGsp5pGguO2Bts6SUiPJ95KZfldsVWbfOP1XcHhaVbTdjT4BWEOqnVb8OtK5sjAxtjlpwL69dn41DPbl-zYdcbN2qxo7EYTYNAIlWKvtv5A">
+<span class="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white" title="Available Today"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight leading-snug">
+              Dr. Priya Sharma
+            </h3>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">
+              MBBS, MD
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">
+              Pediatrician
+            </span>
+<div class="flex items-center gap-1.5 mt-2.5 px-2.5 py-1 rounded-full bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(180+ reviews)</span>
+</div>
+<div class="w-full mt-4 pt-3 flex flex-col gap-2">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-primary font-label-md text-label-md transition-colors text-center" href="#">
+                View Profile
+              </a>
+<a class="w-full py-2 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors text-center flex items-center justify-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">event</span>
+                Book Visit
+              </a>
+</div>
+</article>
+<!-- Card 3: Dr. Amit Verma -->
+<article class="doctor-card bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center group" data-department="orthopedics" data-name="Dr. Amit Verma">
+<div class="relative w-32 h-32 mb-3.5 rounded-full overflow-hidden bg-surface-container-high/60 p-1">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300" data-alt="Professional studio portrait of Dr. Amit Verma, male orthopedic surgeon in doctor coat with neat trimmed beard, confident demeanor, bright medical clinic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBRzUGW900DmWUcYh3XYnmSBxz4Vgq9tbJL3gf537qLGM6aQx97fBbB_pYe5kRufauwXZhGj0If5tfp1-FtYz-MIVy5HDX8hG8gGrnfpgZ6e1vxH0sCZc4bd1wjjQuDMIjCLnx5UIRPODvKAlVMk_cvfNP7Ew2GmBfiK-Q-M-g2ztwT7D_l2Ofhkz3e5LYUdif-R-FGiq0w34l_F0pI3Ut_JqRQwfI6CAO2GkAm5uflkMZj8NJoCj4Lg">
+<span class="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-amber-400 border-2 border-white" title="Filling Fast"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight leading-snug">
+              Dr. Amit Verma
+            </h3>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">
+              MBBS, MS
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">
+              Orthopedic Surgeon
+            </span>
+<div class="flex items-center gap-1.5 mt-2.5 px-2.5 py-1 rounded-full bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.7</span>
+<span class="font-body-sm text-body-sm text-outline">(120+ reviews)</span>
+</div>
+<div class="w-full mt-4 pt-3 flex flex-col gap-2">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-primary font-label-md text-label-md transition-colors text-center" href="#">
+                View Profile
+              </a>
+<a class="w-full py-2 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors text-center flex items-center justify-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">event</span>
+                Book Visit
+              </a>
+</div>
+</article>
+<!-- Card 4: Dr. Neha Singh -->
+<article class="doctor-card bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center group" data-department="dermatology" data-name="Dr. Neha Singh">
+<div class="relative w-32 h-32 mb-3.5 rounded-full overflow-hidden bg-surface-container-high/60 p-1">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300" data-alt="Warm and modern portrait of Dr. Neha Singh, female dermatologist with radiant clear skin in a crisp lab coat, reassuring smile, soft ice blue background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKKmt7mXSn77Ih0Lww9QQx2pNQ_doc_WqgF9jBQKwED268lYGH5Nwr0RtZkvKpAVS38oa3hXfZ8Z-ELoeuE0LSbJ7xgeKBbwi_FB4_X5_POmsVt9qovJuV7G-Vk6u_pz5H4oW9ILwckmn5VdR81-w-8Wh6c6xXzVW_-TxoI0wA3PXYMDh_ZfJYnpGKwT37DsNAWvwU0Tt1pckWIC5TtdS988U7XI9_28O40niey2bT0Mad-baAV9vMxQ">
+<span class="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white" title="Available Today"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight leading-snug">
+              Dr. Neha Singh
+            </h3>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">
+              MBBS, MD
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">
+              Dermatologist
+            </span>
+<div class="flex items-center gap-1.5 mt-2.5 px-2.5 py-1 rounded-full bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
+<span class="font-body-sm text-body-sm text-outline">(160+ reviews)</span>
+</div>
+<div class="w-full mt-4 pt-3 flex flex-col gap-2">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-primary font-label-md text-label-md transition-colors text-center" href="#">
+                View Profile
+              </a>
+<a class="w-full py-2 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors text-center flex items-center justify-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">event</span>
+                Book Visit
+              </a>
+</div>
+</article>
+<!-- Card 5: Dr. Vikram Patel -->
+<article class="doctor-card bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center group" data-department="cardiology" data-name="Dr. Vikram Patel">
+<div class="relative w-32 h-32 mb-3.5 rounded-full overflow-hidden bg-surface-container-high/60 p-1">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300" data-alt="Doctor headshot of Dr. Vikram Patel, Indian male cardiologist in standard medical attire with stethoscope, confident and attentive expression, modern hospital clinic environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI-QzVmnhBK1yNacnLSIE_nkvOpRajjLcSHWW5cfoQ2O3yjFsDtQFK7AdmOJ7NFkgUID08w5ABRki3O1H0Y1JTK_n1ad9rLhRzYSHpkiVk_Y-OpoVQ6gjX3PkOvY9lxt41PJM7BTgii4CZbmaw4OkPFu_7dAxA0NVyYpXjObcIYOdWfF1iQhhYpEjSG7RzVidBG6Eg5H3DUm0-sy0cIWqGNlhE8m0f_3XsTgf36yZHqnDv0Fafqz6CnQ">
+<span class="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white" title="Available Today"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight leading-snug">
+              Dr. Vikram Patel
+            </h3>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">
+              MBBS, MD
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">
+              Cardiologist
+            </span>
+<div class="flex items-center gap-1.5 mt-2.5 px-2.5 py-1 rounded-full bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
+<span class="font-body-sm text-body-sm text-outline">(210+ reviews)</span>
+</div>
+<div class="w-full mt-4 pt-3 flex flex-col gap-2">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-primary font-label-md text-label-md transition-colors text-center" href="#">
+                View Profile
+              </a>
+<a class="w-full py-2 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors text-center flex items-center justify-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">event</span>
+                Book Visit
+              </a>
+</div>
+</article>
+<!-- Card 6: Dr. Anjali Mehta -->
+<article class="doctor-card bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center group" data-department="gynecology" data-name="Dr. Anjali Mehta">
+<div class="relative w-32 h-32 mb-3.5 rounded-full overflow-hidden bg-surface-container-high/60 p-1">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300" data-alt="Warm and reassuring portrait of Dr. Anjali Mehta, experienced female gynecologist and obstetrician smiling gently in white doctor coat, clean pastel healthcare background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWDpTWIIQiMILYOcEnP2lONsmKplyo5Bo4I7_Bk6qMzwDKxfzlbbvKgMWNCBcotwei1p87tDeXvU-0W6nM6ARytwoeejF_ieYFebHwQoGAsx_P-dL89WPwijeEGyHNSeskjsI5YTWXGrKP_WVE2skpmEHxR_1cnmRc5-SjdlS1GP4KFlUNMgmnrgzI2Ctk-y-W2qELsp-ypcUVPkq233fb9lEEJfYNUAgokdSkPeWntAaU71hwvdCQfQ">
+<span class="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white" title="Available Today"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight leading-snug">
+              Dr. Anjali Mehta
+            </h3>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">
+              MBBS, MS
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">
+              Gynecologist
+            </span>
+<div class="flex items-center gap-1.5 mt-2.5 px-2.5 py-1 rounded-full bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(190+ reviews)</span>
+</div>
+<div class="w-full mt-4 pt-3 flex flex-col gap-2">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-primary font-label-md text-label-md transition-colors text-center" href="#">
+                View Profile
+              </a>
+<a class="w-full py-2 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors text-center flex items-center justify-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">event</span>
+                Book Visit
+              </a>
+</div>
+</article>
+<!-- Card 7: Dr. Karan Singh -->
+<article class="doctor-card bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center group" data-department="ent" data-name="Dr. Karan Singh">
+<div class="relative w-32 h-32 mb-3.5 rounded-full overflow-hidden bg-surface-container-high/60 p-1">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300" data-alt="Doctor headshot of Dr. Karan Singh, male ear-nose-throat ENT specialist wearing surgical scrubs and white coat, cheerful and professional attitude, medical clinic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2j59jmEmXfPcsBcYZONNUuAzd1OV_MiVJ4zbQDjRaDaOJSneXW_mKG1fFa_f9LW2KPcFwwatmXGaHopwSKM-jrHBudTW-CKuILkcdZMhYA-j-ivlOpDIm7r3sZpWLqUm50_wMoZaU_02WkMCbcoQpsnWHQucdJPBIQP4qCR3O6yPy6dEdZTyUApip-9dnY4uLeOc-3lLhWzI7ueFsdsLuWZI_J8lmVPR5BhlQh4J_DvOpebA2evL9lQ">
+<span class="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white" title="Available Today"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight leading-snug">
+              Dr. Karan Singh
+            </h3>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">
+              MBBS, MS
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">
+              ENT Specialist
+            </span>
+<div class="flex items-center gap-1.5 mt-2.5 px-2.5 py-1 rounded-full bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.7</span>
+<span class="font-body-sm text-body-sm text-outline">(140+ reviews)</span>
+</div>
+<div class="w-full mt-4 pt-3 flex flex-col gap-2">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-primary font-label-md text-label-md transition-colors text-center" href="#">
+                View Profile
+              </a>
+<a class="w-full py-2 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors text-center flex items-center justify-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">event</span>
+                Book Visit
+              </a>
+</div>
+</article>
+<!-- Card 8: Dr. Pooja Sharma -->
+<article class="doctor-card bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center group" data-department="dental" data-name="Dr. Pooja Sharma">
+<div class="relative w-32 h-32 mb-3.5 rounded-full overflow-hidden bg-surface-container-high/60 p-1">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300" data-alt="Portrait of Dr. Pooja Sharma, friendly female dental surgeon in blue scrubs and white doctor coat, radiant smile displaying perfect teeth, modern dental clinic room in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIna_tDL41NZNTTFx6LwI3mbr87lqDIrkaLx3juVwBScsTWCCOgJmHr8lb33ffhDKqaKEzwEcii0ZXTpgC7iLRu4avak4JuGOQ9qVLDUHRRwPA0Le3RSlc2ciGNovtcmd0yfzNfQFgj33H4e4B-XSfD8FSA1X10vh28SNbhIvN4u2gA9LBNbsQSJcT-4Zoji_hk8kfkGqP4iXQjVBDg8n1E45DyLULqNg5F1TkE6rq1FCoXf78KwNBSA">
+<span class="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white" title="Available Today"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight leading-snug">
+              Dr. Pooja Sharma
+            </h3>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">
+              BDS, MDS
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">
+              Dental Surgeon
+            </span>
+<div class="flex items-center gap-1.5 mt-2.5 px-2.5 py-1 rounded-full bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
+<span class="font-body-sm text-body-sm text-outline">(170+ reviews)</span>
+</div>
+<div class="w-full mt-4 pt-3 flex flex-col gap-2">
+<a class="w-full py-2 px-3 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-primary font-label-md text-label-md transition-colors text-center" href="#">
+                View Profile
+              </a>
+<a class="w-full py-2 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors text-center flex items-center justify-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">event</span>
+                Book Visit
+              </a>
+</div>
+</article>
+</div>
+<!-- No Doctors Found State (Initially hidden) -->
+<div class="hidden flex-col items-center justify-center py-16 px-4 bg-surface-container-lowest rounded-xl text-center" id="empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-outline mb-3">
+<span class="material-symbols-outlined text-[32px]">search_off</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">No specialists found</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-1">
+            We couldn't find any doctor matching your search criteria. Try clearing filters or searching for another specialty.
+          </p>
+<button class="mt-4 px-4 py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-colors" id="reset-empty-btn">
+            Reset Filters
+          </button>
+</div>
+<!-- Teleconsultation & Emergency Callout Banner -->
+<section class="mt-4 w-full bg-gradient-to-r from-surface-container-highest via-surface-container-high to-surface-container p-6 rounded-xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">videocam</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Can't make it to the clinic in person?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Schedule an instant HD video consultation with our on-duty doctors from home.</p>
+</div>
+</div>
+<a class="shrink-0 px-6 py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-all shadow-sm" href="#">
+            Book Video Consult
+          </a>
+</section>
+</div>
+</div>
+</main>
+</div>
+<script>
+  (function () {
+    const searchInput = document.getElementById('doctor-search');
+    const departmentSelect = document.getElementById('department-select');
+    const sortSelect = document.getElementById('sort-select');
+    const specialtyTabs = document.querySelectorAll('.specialty-tab');
+    const doctorCards = document.querySelectorAll('.doctor-card');
+    const countDisplay = document.getElementById('doctor-count');
+    const emptyState = document.getElementById('empty-state');
+    const clearBtn = document.getElementById('clear-filters-btn');
+    const resetEmptyBtn = document.getElementById('reset-empty-btn');
+
+    let currentSpecialty = 'all';
+
+    function filterDoctors() {
+      const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+      let visibleCount = 0;
+
+      doctorCards.forEach(card => {
+        const dept = card.getAttribute('data-department');
+        const name = card.getAttribute('data-name').toLowerCase();
+        const specialtyText = card.querySelector('span.text-secondary').textContent.toLowerCase();
+
+        const matchesSpecialty = (currentSpecialty === 'all') || (dept === currentSpecialty);
+        const matchesSearch = !searchTerm || name.includes(searchTerm) || specialtyText.includes(searchTerm);
+
+        if (matchesSpecialty && matchesSearch) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+          card.classList.remove('flex');
+        }
+      });
+
+      if (countDisplay) {
+        countDisplay.textContent = visibleCount;
+      }
+
+      if (emptyState) {
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+      }
+    }
+
+    function setActiveTab(specialty) {
+      currentSpecialty = specialty;
+      specialtyTabs.forEach(tab => {
+        const tabDept = tab.getAttribute('data-specialty');
+        if (tabDept === specialty) {
+          tab.className = 'specialty-tab active flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md transition-all text-left';
+          const badge = tab.querySelector('.font-badge');
+          if (badge) {
+            badge.className = 'text-badge font-badge bg-on-secondary/20 px-2 py-0.5 rounded-full text-on-secondary';
+          }
+        } else {
+          tab.className = 'specialty-tab flex items-center justify-between w-full px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-secondary font-label-md text-label-md transition-all text-left';
+          const badge = tab.querySelector('.font-badge');
+          if (badge) {
+            badge.className = 'text-badge font-badge bg-surface-container text-outline px-2 py-0.5 rounded-full';
+          }
+        }
+      });
+
+      if (departmentSelect && departmentSelect.value !== specialty) {
+        departmentSelect.value = specialty;
+      }
+
+      filterDoctors();
+    }
+
+    specialtyTabs.forEach(tab => {
+      tab.addEventListener('click', function () {
+        const specialty = this.getAttribute('data-specialty');
+        setActiveTab(specialty);
+      });
+    });
+
+    if (departmentSelect) {
+      departmentSelect.addEventListener('change', function () {
+        setActiveTab(this.value);
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', filterDoctors);
+    }
+
+    function resetAllFilters() {
+      if (searchInput) searchInput.value = '';
+      if (departmentSelect) departmentSelect.value = 'all';
+      if (sortSelect) sortSelect.value = 'recommended';
+      setActiveTab('all');
+    }
+
+    if (clearBtn) clearBtn.addEventListener('click', resetAllFilters);
+    if (resetEmptyBtn) resetEmptyBtn.addEventListener('click', resetAllFilters);
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.03)]"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-3"><img alt="CarePlus Clinic Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UhlpEKt_Gf-PhdT_siXfRECMT8O9X6O_L9_2OAs1g8Eb-lsT04YJ9BhhXvhcbjLyrr_lJun-pjl3GWO8hfZmPQlc3OO3Lr9a9n0Tq6ZI0b56WQV6490UTfqcKpHs-8wb_2VWEwRJcOwDJ3nWh_MXeTY2hUAMaJmGI_J3Cp4izNbEU4eh7n-23YUhw_CYqHO38p0syfVZ9YVkUFVusyu2mEaxyNzbY0p10WrNlcy156JcqXfJxLKAVA-AsZ"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">CarePlus</span><span class="font-badge text-badge text-secondary tracking-wider uppercase mt-0.5">MULTI-SPECIALITY CLINIC</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Delivering unwavering clinical excellence, state-of-the-art diagnostic technology, and compassionate patient-centered healthcare for your entire family.</p><div class="flex items-center gap-3"><a aria-label="Location" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">location_on</span></a><a aria-label="Email" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">mail</span></a><a aria-label="Language" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a aria-label="Emergency Portal" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">health_and_safety</span></a></div></div><div class="flex flex-col gap-3"><span class="font-headline-sm text-headline-sm text-primary">Quick Links</span><ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant"><li class=""><a class="hover:text-secondary transition-colors" data-path="about" href="#">About Us</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="doctors" href="#">Our Doctors</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="departments" href="#">Specialties</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="appointment" href="#">Book Appointment</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="contact" href="#">Contact Clinic</a></li></ul></div><div class="flex flex-col gap-3"><span class="font-headline-sm text-headline-sm text-primary">Specialties</span><ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant"><li class=""><a class="hover:text-secondary transition-colors" data-path="departments" href="#">Cardiology &amp; Heart Care</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="departments" href="#">Pediatrics &amp; Neonatology</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="departments" href="#">Orthopedics &amp; Joint Surgery</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="departments" href="#">Neurology &amp; Spine Clinic</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="departments" href="#">General Medicine</a></li></ul></div><div class="flex flex-col gap-3"><span class="font-headline-sm text-headline-sm text-primary">Clinic Hours</span><div class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant"><div class="flex justify-between"><span class="">Mon - Fri:</span><span class="font-label-sm text-label-sm text-on-surface">8:00 AM - 8:30 PM</span></div><div class="flex justify-between"><span class="">Saturday:</span><span class="font-label-sm text-label-sm text-on-surface">9:00 AM - 6:00 PM</span></div><div class="flex justify-between"><span class="">Sunday:</span><span class="font-label-sm text-label-sm text-on-surface">Emergency Only</span></div></div><div class="mt-3 p-3 rounded-lg bg-surface-container-low flex flex-col gap-1"><span class="font-label-sm text-label-sm text-error flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">emergency</span>24/7 Emergency Line</span><span class="font-label-md text-label-md text-on-surface font-bold">+91 98765 00108</span></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p class="">© 2024 CarePlus Multi-Speciality Clinic. All rights reserved.</p><div class="flex items-center gap-space-lg"><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a><a class="hover:text-secondary transition-colors" href="#">Terms of Service</a><a class="hover:text-secondary transition-colors" href="#">Patient Rights</a></div></div></div></footer>
+
+</body></html>

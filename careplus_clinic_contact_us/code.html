@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline-variant": "#c2c6d1",
+          "surface": "#faf9ff",
+          "outline": "#737781",
+          "on-background": "#051a3e",
+          "tertiary": "#2a3134",
+          "error": "#ba1a1a",
+          "on-tertiary-fixed": "#161c1f",
+          "on-secondary": "#ffffff",
+          "primary-fixed": "#d4e3ff",
+          "surface-container-high": "#e1e8ff",
+          "inverse-on-surface": "#edf0ff",
+          "on-secondary-fixed": "#001f23",
+          "surface-tint": "#2f6099",
+          "on-secondary-container": "#006d76",
+          "error-container": "#ffdad6",
+          "surface-container-low": "#f1f3ff",
+          "on-error-container": "#93000a",
+          "on-surface-variant": "#424750",
+          "on-tertiary-fixed-variant": "#41484b",
+          "tertiary-container": "#41474a",
+          "surface-bright": "#faf9ff",
+          "primary-container": "#0b477f",
+          "inverse-primary": "#a4c9ff",
+          "on-primary-fixed": "#001c39",
+          "on-primary-container": "#89b6f5",
+          "surface-container-highest": "#d9e2ff",
+          "background": "#faf9ff",
+          "primary-fixed-dim": "#a4c9ff",
+          "on-secondary-fixed-variant": "#004f56",
+          "tertiary-fixed-dim": "#c1c7cb",
+          "inverse-surface": "#1e3054",
+          "on-error": "#ffffff",
+          "secondary": "#006971",
+          "surface-dim": "#ccdaff",
+          "on-primary-fixed-variant": "#0d4880",
+          "secondary-fixed": "#88f3ff",
+          "on-surface": "#051a3e",
+          "surface-container-lowest": "#ffffff",
+          "primary": "#00305c",
+          "on-tertiary": "#ffffff",
+          "secondary-container": "#81f0fd",
+          "on-tertiary-container": "#afb5b9",
+          "surface-variant": "#d9e2ff",
+          "tertiary-fixed": "#dde3e7",
+          "surface-container": "#e9edff",
+          "secondary-fixed-dim": "#65d7e3",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "gutter-sm": "1rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-xl": "2.5rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "label-sm": ["Inter"],
+          "body-lg": ["Inter"],
+          "body-sm": ["Inter"],
+          "badge": ["Inter"],
+          "body-md": ["Inter"],
+          "label-md": ["Inter"],
+          "display-hero-mobile": ["Inter"],
+          "display-hero": ["Inter"],
+          "headline-md": ["Inter"],
+          "headline-lg": ["Inter"],
+          "headline-sm": ["Inter"],
+          "headline-lg-mobile": ["Inter"]
+        },
+        "fontSize": {
+          "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+          "body-lg": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+          "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "badge": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "700"}],
+          "body-md": ["14px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "display-hero-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+          "display-hero": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+          "headline-md": ["22px", {"lineHeight": "30px", "fontWeight": "700"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-sm": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-3 shrink-0"><img alt="CarePlus Clinic Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UhlpEKt_Gf-PhdT_siXfRECMT8O9X6O_L9_2OAs1g8Eb-lsT04YJ9BhhXvhcbjLyrr_lJun-pjl3GWO8hfZmPQlc3OO3Lr9a9n0Tq6ZI0b56WQV6490UTfqcKpHs-8wb_2VWEwRJcOwDJ3nWh_MXeTY2hUAMaJmGI_J3Cp4izNbEU4eh7n-23YUhw_CYqHO38p0syfVZ9YVkUFVusyu2mEaxyNzbY0p10WrNlcy156JcqXfJxLKAVA-AsZ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">CarePlus</span><span class="font-badge text-badge text-secondary tracking-wider uppercase mt-0.5">MULTI-SPECIALITY CLINIC</span></div></div><nav class="hidden lg:flex items-center gap-space-lg h-full" data-active-classes="text-secondary border-b-2 border-secondary font-label-md"><a class="h-full flex items-center border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="home" href="#">Home</a><a class="h-full flex items-center border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="about" href="#">About</a><a class="h-full flex items-center border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="departments" href="#">Departments</a><a class="h-full flex items-center border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="doctors" href="#">Doctors</a><a class="h-full flex items-center border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="appointment" href="#">Appointment</a><a aria-current="page" class="h-full flex items-center transition-colors text-secondary border-b-2 border-secondary font-label-md" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-3 pr-2"><div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary"><span class="material-symbols-outlined text-[20px]">call</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">+91 98765 43210</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Mon - Sat: 9AM - 8PM</span></div></div><a class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" data-path="appointment" href="#">Book Appointment</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover hidden sm:block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX5OOgXV-ItpxA9dzoCmvkwt7hjUV7rLYjgwAx13J4KiLJkQu6sdORzBd4ABR8xskaL56uCPuSoAbGEzZLuu6mskuXEAS8Dveyi4dSnoRFFYt87SHufexyLfO3R50v-KgWbJg0O-6Q5xdwsTU2oHmoOfV9i4_kcFQbgGVzYY9-6mLFtBP3JIGkChqh7etvwxex2Ygv-8c-GCmjgWKvVMs8iVPq8JNQdwUatwPBsthdlXEqc26-rUnaJg"/></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb Bar -->
+<div class="bg-surface-container-low py-3 px-margin">
+<div class="max-w-7xl mx-auto flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="text-outline-variant font-bold">›</span>
+<span class="font-label-sm text-label-sm text-primary">Contact</span>
+</div>
+</div>
+<!-- Hero Banner: Deep Navy (#0B477F) inspired by Section 5 of design -->
+<section class="relative overflow-hidden bg-primary-container text-on-primary">
+<!-- Subtle architectural background graphic & accent glow -->
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary-container to-secondary opacity-95"></div>
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto px-margin py-12 md:py-16 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex flex-col max-w-xl z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-on-primary/10 text-secondary-fixed text-label-sm font-label-sm backdrop-blur-sm self-start mb-3">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+<span>CarePlus Patient Support Desk</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-primary tracking-tight leading-tight">
+          Get in Touch
+        </h1>
+<p class="mt-2.5 font-body-lg text-body-lg text-primary-fixed font-normal max-w-lg leading-relaxed">
+          We're here to help. Reach out to us for any queries, outpatient appointments, or emergency medical assistance.
+        </p>
+</div>
+<!-- Right Modern Clinic Graphic with CarePlus signage -->
+<div class="w-full md:w-auto flex items-center justify-center shrink-0">
+<div class="relative group rounded-2xl overflow-hidden shadow-2xl bg-surface-container-lowest/10 p-2 backdrop-blur-md">
+<div class="w-72 sm:w-80 h-44 sm:h-48 rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Modern high-tech multi-speciality outpatient hospital glass entrance facade with glowing blue and white CarePlus Clinic signage architectural clean design soft daytime natural light deep navy accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLm1fiPUUW-qpjpwIWRGUY-YGk41hMfWC257HdReJgxQQpObygWsxVxifIFf6yVe6DaRCIq9ECDxZhXomJMqUF8OosSq0FJao0rXFhm-sm2OQ6pySdPcX0g5UCAT7w-PAiIsXiyeifPOXlnaq2URyYXFTVdDeXXeUF3T3replsKGnuouoazxdAK3FJnH30QNIjCxzLwQxqkeBPF0IfXgcrMtzYPlG-HKvKfFwnbzN01rDQesi9Pl1xfQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-primary font-semibold">Lucknow Main Hub · Active 24/7</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main 3-Column Content Layout (Cards elevated with soft shadows) -->
+<section class="max-w-7xl mx-auto px-margin py-12 md:py-16 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- COLUMN 1: Contact Information Card (Span 3 on desktop) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between pb-3">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Contact Information</h2>
+<span class="w-9 h-9 rounded-full bg-primary-fixed/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">contact_phone</span>
+</span>
+</div>
+<!-- Address -->
+<div class="flex items-start gap-4 group">
+<div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[22px]">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider text-[11px]">Address</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5 leading-snug">
+                123 Healthcare Street, Lucknow, Uttar Pradesh 226001
+              </p>
+<a class="font-label-sm text-label-sm text-secondary hover:underline mt-1 inline-flex items-center gap-0.5" href="#location-map">
+<span>View on map</span>
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</a>
+</div>
+</div>
+<!-- Phone -->
+<div class="flex items-start gap-4 group">
+<div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[22px]">call</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider text-[11px]">Direct Phone Lines</span>
+<a class="font-body-md text-body-md text-on-surface font-semibold hover:text-primary transition-colors mt-0.5" href="tel:+919876543210">
+                +91 98765 43210
+              </a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="tel:+918765432109">
+                +91 87654 32109
+              </a>
+</div>
+</div>
+<!-- Email -->
+<div class="flex items-start gap-4 group">
+<div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[22px]">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider text-[11px]">Electronic Mail</span>
+<a class="font-body-md text-body-md text-primary font-medium hover:underline mt-0.5" href="mailto:info@careplusclinic.com">
+                info@careplusclinic.com
+              </a>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Replies within 2 business hours</span>
+</div>
+</div>
+<!-- Working Hours -->
+<div class="flex items-start gap-4 group">
+<div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+<div class="flex flex-col w-full">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider text-[11px]">Working Hours</span>
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant mt-1">
+<span>Mon - Sat:</span>
+<span class="font-semibold text-on-surface">9:00 AM - 8:00 PM</span>
+</div>
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant mt-0.5">
+<span>Sunday:</span>
+<span class="font-semibold text-on-surface">9:00 AM - 2:00 PM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 24/7 Emergency Hotline Callout (Light Teal Accent Pill) -->
+<div class="mt-8 p-4 rounded-xl bg-secondary-container/40 flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">e911_emergency</span>
+</div>
+<div class="flex flex-col">
+<span class="font-badge text-badge text-secondary font-bold tracking-wider uppercase">24/7 EMERGENCY ASSISTANCE</span>
+<span class="font-headline-sm text-headline-sm text-on-secondary-container font-extrabold leading-tight mt-0.5">
+              +91 98765 00108
+            </span>
+</div>
+</div>
+</div>
+<!-- COLUMN 2: Send Us a Message (Interactive Contact Form) (Span 5 on desktop) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Send Us a Message</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Fill in the form below and our medical team will respond promptly.</p>
+</div>
+<span class="w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</span>
+</div>
+<form class="mt-5 space-y-4" id="contactForm" onsubmit="event.preventDefault(); handleContactSubmit();">
+<!-- Row 1: Name and Email -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface" for="contact-name">Your Name *</label>
+<div class="relative">
+<input class="w-full h-11 px-3.5 pl-10 rounded-lg bg-surface-container-low text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" id="contact-name" placeholder="Enter your name" required="" type="text"/>
+<span class="material-symbols-outlined text-[18px] text-outline absolute left-3 top-3 pointer-events-none">person</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface" for="contact-email">Email Address *</label>
+<div class="relative">
+<input class="w-full h-11 px-3.5 pl-10 rounded-lg bg-surface-container-low text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" id="contact-email" placeholder="Enter your email" required="" type="email"/>
+<span class="material-symbols-outlined text-[18px] text-outline absolute left-3 top-3 pointer-events-none">mail</span>
+</div>
+</div>
+</div>
+<!-- Row 2: Phone and Subject -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface" for="contact-phone">Phone Number *</label>
+<div class="relative">
+<input class="w-full h-11 px-3.5 pl-10 rounded-lg bg-surface-container-low text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" id="contact-phone" placeholder="Enter your phone number" required="" type="tel"/>
+<span class="material-symbols-outlined text-[18px] text-outline absolute left-3 top-3 pointer-events-none">call</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface" for="contact-subject">Subject</label>
+<div class="relative">
+<select class="w-full h-11 px-3.5 pl-10 pr-8 rounded-lg bg-surface-container-low text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all appearance-none cursor-pointer" id="contact-subject">
+<option value="General Inquiry">General Inquiry</option>
+<option value="Appointment Query">Appointment Query</option>
+<option value="Feedback">Feedback &amp; Suggestions</option>
+<option value="Department Query">Specialist Department Query</option>
+<option value="Billing &amp; Insurance">Insurance &amp; Billing</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-outline absolute left-3 top-3 pointer-events-none">topic</span>
+<span class="material-symbols-outlined text-[18px] text-outline absolute right-3 top-3 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Row 3: Message -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface" for="contact-message">Message *</label>
+<textarea class="w-full p-3.5 rounded-lg bg-surface-container-low text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all resize-none" id="contact-message" placeholder="Enter your message or health concern..." required="" rows="4"></textarea>
+</div>
+<!-- Submit Button (Primary Navy) -->
+<button class="w-full h-12 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] cursor-pointer" id="submitBtn" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Send Message</span>
+</button>
+</form>
+<!-- Toast notification for successful submission -->
+<div class="hidden mt-4 p-4 rounded-xl bg-secondary-container text-on-secondary-container flex items-center gap-3 transition-all animate-fade-in" id="successToast">
+<span class="material-symbols-outlined text-[22px] text-secondary">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold">Message sent successfully!</span>
+<span class="font-body-sm text-body-sm">Thank you for reaching out. A CarePlus clinic coordinator will call or email you shortly.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 3: Our Location Card (Span 3 on desktop) -->
+<div class="lg:col-span-3 bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col justify-between h-full" id="location-map">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between pb-3">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Our Location</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Easy outpatient access &amp; parking</p>
+</div>
+<span class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+</span>
+</div>
+<!-- Interactive Map Container with data-location -->
+<div class="relative w-full h-64 rounded-xl overflow-hidden shadow-inner group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-location="CarePlus Multi-Speciality Clinic, 123 Healthcare Street, Lucknow, Uttar Pradesh 226001" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5t3ON8Jo3FBACfpvpscAZMbXOV2zzKiNadz0AVW68-a6G9hIyFAtHg30TvRx8iF3_9sX6E0_F0cUO1_tZ6qdDBIIz-WcU86WSgTJGiWmGPVlk-A3buZ_PuAeild45xKjDzgAyNEY7mqfPpdIv-oRwvcMKDUnn7hqRewRLqmn99ueenyyNHXSUs5MGQ7S-qmzmEAhuoV96A_GR044zqlwDb-EIo5wshugnhv1dn7H7wgXVF-nEr76DTA')"></div>
+<!-- Map Overlay Pin Marker (Stylized as shown in reference) -->
+<div class="absolute inset-0 bg-primary/10 pointer-events-none flex items-center justify-center">
+<div class="flex flex-col items-center">
+<div class="px-3 py-1 rounded-full bg-primary text-on-primary font-badge text-badge shadow-lg flex items-center gap-1 -mb-1 animate-bounce">
+<span class="material-symbols-outlined text-[14px]">local_hospital</span>
+<span>CarePlus Clinic</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-error text-on-error flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+</div>
+</div>
+<!-- Map Controls Mockup -->
+<div class="absolute right-3 bottom-3 flex flex-col gap-1 shadow-md rounded-lg overflow-hidden bg-surface-container-lowest">
+<button aria-label="Zoom in" class="w-8 h-8 flex items-center justify-center hover:bg-surface-container transition-colors text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="w-full h-[1px] bg-surface-container"></div>
+<button aria-label="Zoom out" class="w-8 h-8 flex items-center justify-center hover:bg-surface-container transition-colors text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+</div>
+<div class="absolute left-3 bottom-3 px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-[10px] text-on-surface font-semibold tracking-wide">
+              Google Maps View
+            </div>
+</div>
+<!-- Location Info Snippet -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1.5 mt-1">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">local_parking</span>
+<span>Complimentary Valet &amp; Ambulance Bay</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">
+              Convenient wheelchair access from Sector 4 Ring Road. Metro Station 400m away.
+            </p>
+</div>
+</div>
+<a class="mt-4 w-full h-11 rounded-lg bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container text-primary font-label-md text-label-md flex items-center justify-center gap-2 transition-all" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">navigation</span>
+<span>Get Driving Directions</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Clinic FAQ Accordion Section -->
+<section class="w-full bg-surface-container-low py-16">
+<div class="max-w-4xl mx-auto px-margin">
+<div class="text-center flex flex-col items-center mb-10">
+<span class="font-badge text-badge text-secondary tracking-widest uppercase mb-1">FREQUENTLY ASKED QUESTIONS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Need Quick Answers?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">
+          Everything you need to know about scheduling, clinic visits, emergency admissions, and our cashless insurance panel.
+        </p>
+</div>
+<!-- Accordion List -->
+<div class="flex flex-col gap-3.5" id="faqAccordion">
+<!-- FAQ 1 -->
+<div class="faq-item rounded-xl bg-surface-container-lowest transition-shadow duration-200 shadow-sm overflow-hidden">
+<button aria-expanded="false" class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-primary flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">calendar_month</span>
+              How do I book an appointment?
+            </span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+<p class="font-body-md text-body-md text-on-surface-variant pb-5 leading-relaxed">
+              You can easily schedule a consultation online through our <a class="text-secondary font-semibold hover:underline" href="#">Appointment Portal</a>, call our dedicated helpdesk at <span class="font-semibold text-on-surface">+91 98765 43210</span>, or walk into the CarePlus Clinic reception desk during standard operating hours.
+            </p>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="faq-item rounded-xl bg-surface-container-lowest transition-shadow duration-200 shadow-sm overflow-hidden">
+<button aria-expanded="false" class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-primary flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">alarm</span>
+              What are your clinic opening hours?
+            </span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+<p class="font-body-md text-body-md text-on-surface-variant pb-5 leading-relaxed">
+              Our outpatient departments and specialist consultation clinics are open Monday through Saturday from 9:00 AM to 8:00 PM, and Sundays from 9:00 AM to 2:00 PM. Our 24/7 Trauma, Emergency Response, and In-house Pharmacy stay fully operational around the clock every day.
+            </p>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="faq-item rounded-xl bg-surface-container-lowest transition-shadow duration-200 shadow-sm overflow-hidden">
+<button aria-expanded="false" class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-primary flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified_user</span>
+              Do you accept health insurance?
+            </span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+<p class="font-body-md text-body-md text-on-surface-variant pb-5 leading-relaxed">
+              Yes, CarePlus is empaneled with over 35+ major health insurance providers and Third-Party Administrators (TPAs) including Star Health, HDFC ERGO, ICICI Lombard, Max Bupa, and CGHS. Our insurance facilitation desk assists you with instant cashless approvals.
+            </p>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="faq-item rounded-xl bg-surface-container-lowest transition-shadow duration-200 shadow-sm overflow-hidden">
+<button aria-expanded="false" class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-primary flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">event_repeat</span>
+              Can I cancel or reschedule my appointment?
+            </span>
+<span class="material-symbols-outlined faq-icon text-outline transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+<p class="font-body-md text-body-md text-on-surface-variant pb-5 leading-relaxed">
+              Yes. You can reschedule or cancel at no additional charge up to 2 hours before your scheduled appointment time via our SMS link, WhatsApp assistant, or by speaking with our reception team.
+            </p>
+</div>
+</div>
+</div>
+<!-- Quick Assistance Callout Bar -->
+<div class="mt-10 p-6 rounded-2xl bg-surface-container-highest/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Have a unique medical inquiry?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Our clinical nurse coordinator is available on WhatsApp chat.</span>
+</div>
+</div>
+<a class="px-5 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary/90 transition-all flex items-center gap-2 shrink-0 shadow-sm" href="https://wa.me/919876543210" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Interactive FAQ Accordion Logic
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+      const content = trigger.nextElementSibling;
+      const icon = trigger.querySelector('.faq-icon');
+
+      // Close all other open accordion items
+      document.querySelectorAll('.faq-trigger').forEach(otherTrigger => {
+        if (otherTrigger !== trigger) {
+          otherTrigger.setAttribute('aria-expanded', 'false');
+          otherTrigger.nextElementSibling.style.maxHeight = null;
+          const otherIcon = otherTrigger.querySelector('.faq-icon');
+          if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+        }
+      });
+
+      // Toggle current item
+      if (!isExpanded) {
+        trigger.setAttribute('aria-expanded', 'true');
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        trigger.setAttribute('aria-expanded', 'false');
+        content.style.maxHeight = null;
+        icon.style.transform = 'rotate(0deg)';
+      }
+    });
+  });
+
+  // Contact Form Submission Handler
+  function handleContactSubmit() {
+    const submitBtn = document.getElementById('submitBtn');
+    const toast = document.getElementById('successToast');
+    const form = document.getElementById('contactForm');
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">refresh</span><span>Sending message...</span>';
+
+    setTimeout(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span><span>Sent Successfully</span>';
+      toast.classList.remove('hidden');
+      form.reset();
+
+      setTimeout(() => {
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">send</span><span>Send Message</span>';
+      }, 4000);
+    }, 800);
+  }
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.03)]"><div class="max-w-7xl mx-auto px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-3"><img alt="CarePlus Clinic Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UhlpEKt_Gf-PhdT_siXfRECMT8O9X6O_L9_2OAs1g8Eb-lsT04YJ9BhhXvhcbjLyrr_lJun-pjl3GWO8hfZmPQlc3OO3Lr9a9n0Tq6ZI0b56WQV6490UTfqcKpHs-8wb_2VWEwRJcOwDJ3nWh_MXeTY2hUAMaJmGI_J3Cp4izNbEU4eh7n-23YUhw_CYqHO38p0syfVZ9YVkUFVusyu2mEaxyNzbY0p10WrNlcy156JcqXfJxLKAVA-AsZ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">CarePlus</span><span class="font-badge text-badge text-secondary tracking-wider uppercase mt-0.5">MULTI-SPECIALITY CLINIC</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Delivering unwavering clinical excellence, state-of-the-art diagnostic technology, and compassionate patient-centered healthcare for your entire family.</p><div class="flex items-center gap-3"><a aria-label="Location" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">location_on</span></a><a aria-label="Email" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">mail</span></a><a aria-label="Language" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a aria-label="Emergency Portal" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">health_and_safety</span></a></div></div><div class="flex flex-col gap-3"><span class="font-headline-sm text-headline-sm text-primary">Quick Links</span><ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-secondary transition-colors" data-path="about" href="#">About Us</a></li><li><a class="hover:text-secondary transition-colors" data-path="doctors" href="#">Our Doctors</a></li><li><a class="hover:text-secondary transition-colors" data-path="departments" href="#">Specialties</a></li><li><a class="hover:text-secondary transition-colors" data-path="appointment" href="#">Book Appointment</a></li><li><a class="hover:text-secondary transition-colors" data-path="contact" href="#">Contact Clinic</a></li></ul></div><div class="flex flex-col gap-3"><span class="font-headline-sm text-headline-sm text-primary">Specialties</span><ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-secondary transition-colors" data-path="departments" href="#">Cardiology &amp; Heart Care</a></li><li><a class="hover:text-secondary transition-colors" data-path="departments" href="#">Pediatrics &amp; Neonatology</a></li><li><a class="hover:text-secondary transition-colors" data-path="departments" href="#">Orthopedics &amp; Joint Surgery</a></li><li><a class="hover:text-secondary transition-colors" data-path="departments" href="#">Neurology &amp; Spine Clinic</a></li><li><a class="hover:text-secondary transition-colors" data-path="departments" href="#">General Medicine</a></li></ul></div><div class="flex flex-col gap-3"><span class="font-headline-sm text-headline-sm text-primary">Clinic Hours</span><div class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant"><div class="flex justify-between"><span>Mon - Fri:</span><span class="font-label-sm text-label-sm text-on-surface">8:00 AM - 8:30 PM</span></div><div class="flex justify-between"><span>Saturday:</span><span class="font-label-sm text-label-sm text-on-surface">9:00 AM - 6:00 PM</span></div><div class="flex justify-between"><span>Sunday:</span><span class="font-label-sm text-label-sm text-on-surface">Emergency Only</span></div></div><div class="mt-3 p-3 rounded-lg bg-surface-container-low flex flex-col gap-1"><span class="font-label-sm text-label-sm text-error flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">emergency</span>24/7 Emergency Line</span><span class="font-label-md text-label-md text-on-surface font-bold">+91 98765 00108</span></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 2024 CarePlus Multi-Speciality Clinic. All rights reserved.</p><div class="flex items-center gap-space-lg"><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a><a class="hover:text-secondary transition-colors" href="#">Terms of Service</a><a class="hover:text-secondary transition-colors" href="#">Patient Rights</a></div></div></div></footer></body></html>
