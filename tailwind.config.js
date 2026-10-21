@@ -7,6 +7,9 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        "xs": "420px",
+      },
       colors: {
         "outline-variant": "#c2c6d1",
         "surface": "#faf9ff",

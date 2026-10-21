@@ -17,7 +17,7 @@ export default function App() {
       <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-surface font-body-md text-body-md text-on-surface antialiased">
         <Navbar />
-        <main className="w-full pt-20 bg-surface flex-grow">
+        <main className="w-full pt-16 sm:pt-20 bg-surface flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
